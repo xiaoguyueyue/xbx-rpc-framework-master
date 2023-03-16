@@ -10,7 +10,7 @@ import java.net.InetSocketAddress;
 /**
  * service registration  based on zookeeper
  *
- * @author xbx
+ * @author xiaobiaoxu
  * @createTime 2022年03月31日 10:56:00
  */
 @Slf4j

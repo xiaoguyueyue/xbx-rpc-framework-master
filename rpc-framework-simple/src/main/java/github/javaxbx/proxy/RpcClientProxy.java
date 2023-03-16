@@ -23,7 +23,7 @@ import java.util.concurrent.CompletableFuture;
  * When a dynamic proxy object calls a method, it actually calls the following invoke method.
  * It is precisely because of the dynamic proxy that the remote method called by the client is like calling the local method (the intermediate process is shielded)
  *
- * @author xbx
+ * @author xiaobiaoxu
  * @createTime 2022年03月10日 19:01:00
  */
 @Slf4j

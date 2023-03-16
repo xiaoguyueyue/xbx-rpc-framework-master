@@ -15,7 +15,7 @@ import java.io.ByteArrayOutputStream;
 /**
  * Kryo serialization class, Kryo serialization efficiency is very high, but only compatible with Java language
  *
- * @author xbx
+ * @author xiaobiaoxu
  * @createTime 2022年03月13日 19:29:00
  */
 @Slf4j

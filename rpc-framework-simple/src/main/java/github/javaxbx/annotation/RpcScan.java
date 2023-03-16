@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
  * scan custom annotations
  * (客户端/服务器)注释在启动类上，启动RPC工具，扫描该项目相关的注解，并处理
  *
- * @author xbx
+ * @author xiaobiaoxu
  * @createTime 2022年03月10日 21:42:00
  */
 @Target({ElementType.TYPE, ElementType.METHOD})

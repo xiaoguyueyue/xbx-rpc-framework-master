@@ -4,7 +4,7 @@ import github.javaxbx.annotation.RpcService;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @author xbx
+ * @author xiaobiaoxu
  * @createTime 2022年03月10日 07:52:00
  */
 @Slf4j

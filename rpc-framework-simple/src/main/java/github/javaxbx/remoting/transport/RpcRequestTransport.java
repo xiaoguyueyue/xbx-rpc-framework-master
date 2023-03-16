@@ -6,7 +6,7 @@ import github.javaxbx.remoting.dto.RpcRequest;
 /**
  * send RpcRequest。
  *
- * @author xbx
+ * @author xiaobiaoxu
  * @createTime 2022年02月29日 13:26:00
  */
 @SPI

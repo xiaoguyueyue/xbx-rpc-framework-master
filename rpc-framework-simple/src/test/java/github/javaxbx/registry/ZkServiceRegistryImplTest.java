@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 
 /**
- * @author xbx
+ * @author xiaobiaoxu
  * @createTime 2022年03月31日 16:25:00
  */
 class ZkServiceRegistryImplTest {

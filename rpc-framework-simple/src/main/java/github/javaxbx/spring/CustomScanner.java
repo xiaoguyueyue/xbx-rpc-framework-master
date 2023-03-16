@@ -9,7 +9,7 @@ import java.lang.annotation.Annotation;
 /**
  * custom package scanner
  *
- * @author xbx
+ * @author xiaobiaoxu
  * @createTime 2022年03月10日 21:42:00
  */
 public class CustomScanner extends ClassPathBeanDefinitionScanner {

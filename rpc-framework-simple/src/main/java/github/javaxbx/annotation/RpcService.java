@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
 /**
  * RPC service annotation, marked on the service implementation class
  * 用于服务器的实现类上，后续扫描到该类后会放入到 ServiceProvider 中，便于后续客户端远程调用
- * @author xbx
+ * @author xiaobiaoxu
  * @createTime 2022年03月21日 13:11:00
  */
 @Documented

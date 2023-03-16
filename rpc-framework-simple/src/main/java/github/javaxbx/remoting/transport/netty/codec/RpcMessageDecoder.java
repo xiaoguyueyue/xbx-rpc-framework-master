@@ -36,8 +36,8 @@ import java.util.Arrays;
  * {@link LengthFieldBasedFrameDecoder} is a length-based decoder , used to solve TCP unpacking and sticking problems.
  * </p>
  *
- * @author wangtao
- * @createTime on 2020/10/2
+ * @author xiaobiaoxu
+ * @createTime on 2022/10/2
  * @see <a href="https://zhuanlan.zhihu.com/p/95621344">LengthFieldBasedFrameDecoder解码器</a>
  */
 @Slf4j
