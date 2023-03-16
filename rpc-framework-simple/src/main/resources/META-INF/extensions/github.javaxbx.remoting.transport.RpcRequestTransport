@@ -1,0 +1,2 @@
+netty=github.javaxbx.remoting.transport.netty.client.NettyRpcClient
+socket=github.javaxbx.remoting.transport.socket.SocketRpcClient

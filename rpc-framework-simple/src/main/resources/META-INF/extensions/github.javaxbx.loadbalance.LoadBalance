@@ -1,0 +1,2 @@
+consistenthash=github.javaxbx.loadbalance.loadbalancer.ConsistentHashLoadBalance
+random=github.javaxbx.loadbalance.loadbalancer.RandomLoadBalance

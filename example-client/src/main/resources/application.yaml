@@ -1,0 +1,8 @@
+server:
+  port: 9990
+spring:
+  rpc:
+    registry: '39.99.247.58:2181'
+    port: 9998
+    client:
+      load-balance: 'consistenthash'

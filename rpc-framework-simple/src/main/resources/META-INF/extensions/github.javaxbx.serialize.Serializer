@@ -1,0 +1,3 @@
+kyro=github.javaxbx.serialize.kyro.KryoSerializer
+protostuff=github.javaxbx.serialize.protostuff.ProtostuffSerializer
+hessian=github.javaxbx.serialize.hessian.HessianSerializer

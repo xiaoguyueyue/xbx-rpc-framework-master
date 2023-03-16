@@ -1,0 +1,4 @@
+spring:
+  rpc:
+    registry: 39.99.247.58:2181
+    port: 9998
