@@ -26,6 +26,7 @@ public class CustomShutdownHook {
         log.info("addShutdownHook for clearAll");
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             try {
+                log.info("execute for clearAll");
                 InetSocketAddress inetSocketAddress = new InetSocketAddress(InetAddress.getLocalHost().getHostAddress(), port);
                 CuratorUtils.clearRegistry(CuratorUtils.getZkClient(), inetSocketAddress);
             } catch (UnknownHostException ignored) {

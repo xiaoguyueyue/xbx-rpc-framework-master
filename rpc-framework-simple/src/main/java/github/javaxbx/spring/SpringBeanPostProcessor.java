@@ -71,6 +71,7 @@ public class SpringBeanPostProcessor implements BeanPostProcessor {
                 Object clientProxy = rpcClientProxy.getProxy(declaredField.getType());
                 declaredField.setAccessible(true);
                 try {
+                    // 设置字段为代理类，到时候调用方法会自动调用代理类实现的方法
                     declaredField.set(bean, clientProxy);
                 } catch (IllegalAccessException e) {
                     e.printStackTrace();

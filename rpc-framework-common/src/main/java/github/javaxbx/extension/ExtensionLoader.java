@@ -16,16 +16,23 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 
 /**
  * refer to dubbo spi: https://dubbo.apache.org/zh-cn/docs/source_code_guide/dubbo-spi.html
+ * 一个接口文件对应一个 ExtensionLoader
  */
 @Slf4j
 public final class ExtensionLoader<T> {
 
+    // 目录位置
     private static final String SERVICE_DIRECTORY = "META-INF/extensions/";
+    // 储存可扩展接口的加载器
     private static final Map<Class<?>, ExtensionLoader<?>> EXTENSION_LOADERS = new ConcurrentHashMap<>();
+    // 全局：储存所有文件的实例对象（可能不同接口对应的实现类是同一个，这样我们就不需要实例化两个一样的类了）
     private static final Map<Class<?>, Object> EXTENSION_INSTANCES = new ConcurrentHashMap<>();
 
+    // 接口的Class
     private final Class<?> type;
+    // 局部：只储存自己文件的实例对象，实例对象使用Holder包裹，这样在获取该实例对象时，只需要对Holder加锁，而不是整个map（
     private final Map<String, Holder<Object>> cachedInstances = new ConcurrentHashMap<>();
+    // 储存配置文件中的实例类的Class对象
     private final Holder<Map<String, Class<?>>> cachedClasses = new Holder<>();
 
     private ExtensionLoader(Class<?> type) {
@@ -62,6 +69,7 @@ public final class ExtensionLoader<T> {
             holder = cachedInstances.get(name);
         }
         // create a singleton if no instance exists
+        // 通过给holder加锁，来减少锁冲突，如果没有holder，那么就需要对整个map加锁了
         Object instance = holder.get();
         if (instance == null) {
             synchronized (holder) {
